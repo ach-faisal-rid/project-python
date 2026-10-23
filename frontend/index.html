@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Manajemen Stok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manajemen Stok Barang</h1>
+        
+        <!-- Form Tambah Barang -->
+        <div class="card">
+            <h2>Tambah Barang</h2>
+            <form id="form-barang">
+                <input type="text" id="nama" placeholder="Nama Barang" required>
+                <input type="number" id="stok" placeholder="Jumlah Stok" required>
+                <input type="number" id="harga" placeholder="Harga (Rp)" required>
+                <button type="submit">Tambah Barang</button>
+            </form>
+        </div>
+
+        <!-- Tabel Daftar Barang -->
+        <div class="card">
+            <h2>Daftar Barang</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama Barang</th>
+                        <th>Stok</th>
+                        <th>Harga</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel-barang">
+                    <!-- Data akan diisi oleh JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
